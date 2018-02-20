@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+  <title>Weather Update</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>GET Weather</legend>
+        <label for="cityName">City Name:</label>
+        <input type="text" name="cityName" id="cityName">
+        <br />
+        <input type="submit" id="urlSubmit">
+      </fieldset>
+    </form>
+    <div>
+      <h2>Weather Results</h2>
+      <ul>
+        <li><span>Location Name:</span><span id="city"></span></li>
+        <li><span>Temperature:</span><span id="temp"></span></li>
+        <li><span>Wind Speed:</span><span id="windSpeed"></span></li>
+        <li><span>Humidity:</span><span id="humidity"></span></li>
+      </ul>
+    </div>
+    <br/>
+    <form>
+      <fieldset>
+        <legend>POST</legend>
+        <label for="inputText">POST Input:</label>
+        <input type="text" name="inputText" id="inputText">
+        <br />
+        <input type="submit" id="textSubmit">
+      </fieldset>
+    </form>
+    <div>
+      <h2>Results from POST</h2>
+      <ul>
+        <li><span>Output from POST:</span><span id="outputText"></span></li>
+  <script src="script.js"></script>
+  <script src="postScript.js"></script>
+  </body>
+</html>
